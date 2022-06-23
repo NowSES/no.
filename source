@@ -33,24 +33,6 @@ local function SendNotification(title,text,duration,...)
     })
   end
 
-game.Players.ChildAdded:Connect(function(player)
-    if not pcall (function()
-    SendNotification("Dragon Dupe",""..player.Name.." has JOINED the game",7 )
-    end) then
-      print ("Error")
-    end
-end)
-game.Players.ChildRemoved:Connect(function(player)
-    if not pcall (function()
-    SendNotification("Dragon Dupe",""..player.Name.." has LEFT the game",6 )
-    end) then
-      print ("Error")
-    end
-end)
-    
-    SendNotification("Dragon Dupe","Join and leave Loaded",5)
-  
-
 --tema
 local themes = {
 Background = Color3.fromRGB(52, 116, 66),
