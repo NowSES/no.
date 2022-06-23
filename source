@@ -5,7 +5,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Dragon Dupe";
     Text = "Welcome "..game.Players.LocalPlayer.Name
 })
-if game:GetService("StarterGui") then  game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Subscribe Dragon Dupe", "All")
+if game:GetService("StarterGui") then  game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("pls subscribe to dragondupe", "All")
 end
 
 local UIS = game:GetService("UserInputService")
