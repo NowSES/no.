@@ -1,11 +1,6 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/DragonDupe/Subscribe/main/DragonDupeGUINew"))()
 local DragonDupe = library.new("DragonDupe", 5013109572)
 
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Dragon Dupe";
-    Text = "Welcome "..game.Players.LocalPlayer.Name
-})
-
 local UIS = game:GetService("UserInputService")
 local Player = game.Players.LocalPlayer
 local Mouse = Player:GetMouse()
@@ -49,41 +44,6 @@ local section1 = page1:addSection("Information")
 local section2 = page1:addSection("Credits")
 local section4 = page1:addSection("All Path Of Objects")
 local section3 = page1:addSection("Settings")
-
-
-section1:addButton("Send Message", function()
-    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("test-Pls subscribe to dragondupe, ty", "All")
-end)
-
-
-section2:addButton("Dragon Dupe Channel", function()
-    setclipboard("https://www.roblox.com/users/2029559724/profile")
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Dragon Dupe";
-        Text = "Link Copied"
-    })
-end)
-section2:addButton("Join Discord", function()
-    setclipboard("https://discord.com/invite/Vf9sTAjvtK")
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Dragon Dupe";
-        Text = "Link Discord Copied"
-    })
-end)
-section2:addButton("Join Roblox Group", function()
-    setclipboard("https://www.roblox.com/groups/13152327/Dragon-Dupe-Fans#!/about")
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Dragon Dupe";
-        Text = "Link Roblox Group Copied"
-    })
-end)
-section2:addButton("Subscribe Dragon Dupe Channel", function()
-    setclipboard("www.youtube.com/dragondupe")
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Dragon Dupe";
-        Text = "Youtube Link Copied"
-    })
-end)
 
 section3:addButton("Destroy Gui", function()
         game:GetService("CoreGui").DragonDupe:Destroy()
