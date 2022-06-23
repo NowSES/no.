@@ -72,7 +72,7 @@ local section3 = page1:addSection("Settings")
 
 
 section1:addButton("Send Message", function()
-    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Subscribe Dragon Dupe", "All")
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("test-Pls subscribe to dragondupe, ty", "All")
 end)
 
 
